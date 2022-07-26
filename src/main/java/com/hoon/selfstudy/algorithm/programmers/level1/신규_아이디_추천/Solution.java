@@ -2,6 +2,14 @@ package com.hoon.selfstudy.algorithm.programmers.level1.신규_아이디_추천;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/72410?language=java
 public class Solution {
+    public static void main(String[] args) {
+
+        String testString = "...!@BaT#*..y.abcdefghijklm";
+        Solution solution = new Solution();
+        String answer = solution.solution(testString);
+        System.out.println(answer);
+    }
+
     public String solution(String new_id) {
         String answer = "";
 
@@ -16,14 +24,5 @@ public class Solution {
 //        answer = matcher.group();
 
         return answer;
-    }
-
-
-    public static void main(String[] args) {
-
-        String testString = "...!@BaT#*..y.abcdefghijklm";
-        Solution solution = new Solution();
-        String answer = solution.solution(testString);
-        System.out.println(answer);
     }
 }

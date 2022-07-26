@@ -7,6 +7,12 @@ import java.util.Map;
 // https://school.programmers.co.kr/learn/courses/30/lessons/81301?language=java
 class Solution {
 
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.mySolution("one4seveneight"));
+        System.out.println(solution.bestSolution("one4seveneight"));
+    }
+
     // 최초 Solution
     public int mySolution(String s) {
 
@@ -54,13 +60,6 @@ class Solution {
         }
 
         return Integer.parseInt(s);
-    }
-
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.mySolution("one4seveneight"));
-        System.out.println(solution.bestSolution("one4seveneight"));
     }
 
 }
