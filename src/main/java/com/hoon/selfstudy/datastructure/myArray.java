@@ -1,6 +1,6 @@
 package com.hoon.selfstudy.datastructure;
 
-public class myArray {
+public class MyArray {
 
     public static void main(String[] args) {
         // 생성자
