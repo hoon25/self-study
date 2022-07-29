@@ -1,9 +1,6 @@
 package com.hoon.selfstudy.datastructure;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.*;
 
 public class MyArrayList {
 
@@ -14,7 +11,7 @@ public class MyArrayList {
         ArrayList<Integer> i0 = new ArrayList<Integer>(); // int타입으로 선언??? 확인 필요
         ArrayList<Integer> i2 = new ArrayList<>(); // integer 타입으로 선언
         ArrayList<Integer> i3 = new ArrayList<Integer>(10); // 초기 용량 세팅
-        ArrayList<Integer> i4 = new ArrayList<Integer>(Arrays.asList(1,2,3,4)); // Arrays.asList
+        ArrayList<Integer> i4 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4)); // Arrays.asList
         ArrayList<Integer> i4Copy = new ArrayList<>(i4); // 다른 Collections 값으로 초기화
 
         ArrayList<String> s = new ArrayList<String>(); // String 타입 사용
@@ -57,11 +54,11 @@ public class MyArrayList {
         s.add("Hello");
         s.add("World2");
 
-        for (int i = 0; i < s.size(); i++ ){
+        for (int i = 0; i < s.size(); i++) {
             System.out.println(s.get(i));
         }
 
-        for (String str : s){
+        for (String str : s) {
             System.out.println(str);
         }
 
@@ -84,5 +81,12 @@ public class MyArrayList {
         System.out.println(s.indexOf("Hello")); // 0
         System.out.println(s.indexOf("World2")); // 3
         System.out.println(s.indexOf("Hi")); // -1
+
+
+        // immutable한 List 객체
+        List<String> results = new ArrayList<String>(List.of("a", "b", "c"));
+        results = Collections.unmodifiableList(results);
+
+
     }
 }
